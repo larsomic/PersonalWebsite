@@ -1,0 +1,23 @@
+{% extends 'main/header.html' %}
+{% load static from staticfiles %}
+
+
+{% block content %}
+
+    {% for cat in categories %}
+<div class="row">
+    <div class="col s12 m6 l4">
+        <a href="{{cat.category_slug}}" , style="color:#000">
+            <div class="card hoverable" style ="padding: 0px">
+                <div class="card-content">
+                    <div class="card-title" style = "font-size: 30"><center>{{cat.tutorial_category}}</center></div>
+                   
+                    <p style="text-align: center"><img src="{% static 'Images/'|add:cat.category_slug|add:'.png'%}" alt="" width="70" height="70"></p>
+                    
+                </div>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
