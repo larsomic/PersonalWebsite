@@ -1,8 +1,11 @@
 {% extends "main/header.html"%}
+{% load static from staticfiles %}
 
 {% block content %}
 <div class="card" style="padding-top: 0px>
     <div class="card-content">
+    	<img src="{% static 'Images/Resume.png'%}" alt="" width="1063" height="1375">
+    	<!--
         <div style="width:relative;height:20px; background-color: #116E7F"></div>
         <div style="width:relative;height:180px; background-color: #D5DDDE">   
             <div class="card-content" style = "font-size: 14; padding-top: 10px">
@@ -66,7 +69,7 @@
       <div style="width:relative;height:800px; background-color: #FFFFFF"></div>
       <div style="width:relative;height:50px; background-color: #D5DDDE"></div>
       <div style="width:relative;height:20px; background-color: #116E7F"></div>
+    -->
     </div>
-
 </div>
 {% endblock%}
